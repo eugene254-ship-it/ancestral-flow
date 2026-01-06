@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Space Grotesk', 'system-ui', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +50,32 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // ATLAS custom semantic colors
+        terracotta: {
+          DEFAULT: "hsl(18 65% 50%)",
+          light: "hsl(18 65% 65%)",
+          dark: "hsl(18 65% 35%)",
+        },
+        forest: {
+          DEFAULT: "hsl(150 35% 30%)",
+          light: "hsl(150 35% 45%)",
+          dark: "hsl(150 35% 20%)",
+        },
+        sand: {
+          DEFAULT: "hsl(35 40% 75%)",
+          light: "hsl(35 40% 88%)",
+          dark: "hsl(35 30% 55%)",
+        },
+        gold: {
+          DEFAULT: "hsl(38 85% 55%)",
+          light: "hsl(38 85% 70%)",
+          dark: "hsl(38 85% 40%)",
+        },
+        earth: {
+          DEFAULT: "hsl(30 15% 12%)",
+          light: "hsl(30 15% 18%)",
+          dark: "hsl(30 15% 6%)",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,20 +94,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
